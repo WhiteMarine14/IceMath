@@ -16,6 +16,8 @@ func Calculate(num1: Double, num2: Double, operation:String) -> Double? {
             return nil
         }
         return num1/num2
-        
+        default:
+            print("Error: Invalid Operation")
+            return nil 
     }
 }
