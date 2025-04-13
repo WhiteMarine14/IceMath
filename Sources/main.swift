@@ -30,7 +30,7 @@ if let input1 = readLine(), let number1 = Double(input1) {
         print("Enter the operation (+, -, *, /): ")
         if let operation = readLine() {
          if let result = Calculate(num1: number1, num2: number2, operation: operation) {
-            print("Result: \(number1) \(number2) \(operation)= \(result)")            
+            print("Result: \(number1) \(operation) \(number2) = \(result)")            
          }
         } else {
             print("Error: Could not read the operation. ")
