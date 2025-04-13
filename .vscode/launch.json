@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:IceMath}",
+            "name": "Debug IceMath",
+            "program": "${workspaceFolder:IceMath}/.build/debug/IceMath",
+            "preLaunchTask": "swift: Build Debug IceMath"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:IceMath}",
+            "name": "Release IceMath",
+            "program": "${workspaceFolder:IceMath}/.build/release/IceMath",
+            "preLaunchTask": "swift: Build Release IceMath"
+        }
+    ]
+}
