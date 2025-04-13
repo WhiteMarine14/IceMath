@@ -10,5 +10,12 @@ func Calculate(num1: Double, num2: Double, operation:String) -> Double? {
         return num1-num2
     case "*":
         return num1*num2
+    case "/":
+        if num2 == 0 {
+            print("Error: Cannot divide by zero.")
+            return nil
+        }
+        return num1/num2
+        
     }
 }
