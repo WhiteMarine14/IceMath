@@ -1,4 +1,7 @@
-// The Swift Programming Language
-// https://docs.swift.org/swift-book
+import Foundation;
 
-print("Hello, world!")
+print("IceMath")
+print("-------")
+func Calculate(num1: Double, num2: Double, operation:String) -> Double? {
+    
+}
