@@ -2,6 +2,7 @@ import Foundation;
 
 print("IceMath")
 print("-------")
+
 func Calculate(num1: Double, num2: Double, operation:String) -> Double? {
     switch operation{
      case "+": 
@@ -21,3 +22,24 @@ func Calculate(num1: Double, num2: Double, operation:String) -> Double? {
             return nil 
     }
 }
+
+print("Enter the first Number: ")
+if let input1 = readLine(), let number1 = Double(input1) {
+    print("Enter the second number: ")
+    if let input2 = readLine(), let number2 = Double(input2) {
+        print("Enter the operation (+, -, *, /): ")
+        if let operation = readLine() {
+         if let result = Calculate(num1: number1, num2: number2, operation: operation) {
+            print("Result: \(number1) \(number2) \(operation)= \(result)")            
+         }
+        } else {
+            print("Error: Could not read the operation. ")
+         }
+            
+        } else {
+            print("Error: Invalid second number. ")
+        }
+    } else {
+        print("Error: Invalid first number. ")
+        
+    }
